@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Trivia Game</title>
+
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- CSS File -->
+	<link rel="stylesheet" href="assets/css/style.css" >
+	<!-- Added link to the jQuery Library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Javascript File -->
+	<script src="assets/java/javascript.js"></script>
+
+
+
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 text-center" id="main-block">
+			<h1>Everything Dinosaurs Trivia Game</h1>
+			<div id="floater"></div>
+			<div id="game-start"><button vertical-align="center" id="start-button">Start</button></div>
+			<div id="game-play">
+				<h2 ><span id="time-remaining-area"></span></h2>
+				<h2><span id="question-area"></span></h2>
+				<img id="image-area" src=assets/images/APPLErev.jpg />
+				<div class="row">
+					<div class="col-md-6">
+						<button type="button" class="btn btn-outline-secondary" id="answer0"></button>
+					</div>
+					<div class="col-md-6">
+						<button type="button" class="btn btn-outline-secondary" id="answer1"></button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<button type="button" class="btn btn-outline-secondary" id="answer2"></button>
+					</div>
+					<div class="col-md-6">
+						<button type="button" class="btn btn-outline-secondary" id="answer3"></button>
+					</div>
+				</div>
+			</div>
+			<div id="game-intermission">
+				<h1><span id="correct-wrong"></span></h1>
+				<h2>The correct answer is <span id="correct-answer"></span>
+			</div>
+			<div id="game-over">
+			<h1>GAME OVER</h1>
+			<br>
+			<h2><span id="correct-answer-area"></span></h2>
+			<h2 ><span id="incorrect-answer-area"></span></h2>
+			<button id="restart-button">Restart Game</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
